@@ -7,8 +7,10 @@ This generates 150000 128x64 pixel captchas with 6 symbols per captcha, using th
 set of symbols in the piazza_2.txt file. The captchas are stored in the folder
 test folders, which is created if it doesn't exist. The names of the captcha images
 are scrambled.
-./generate.py -S piazza_2.txt -c 150000 -o train
-./generate.py -S piazza_2.txt -c 30000 -o valitaion
+
+   ./generate.py -S piazza_2.txt -c 150000 -o train
+
+   ./generate.py -S piazza_2.txt -c 30000 -o valitaion
 
 
 To train and validate a neural network, we need two sets of data: a big
@@ -17,7 +19,7 @@ training set, and tested on the validation set, so it is very important that
 there are no images that are in both sets.
 # Training the model
 
- python3 Train.py --width 128 --height 64 --length 6 --symbols symbols.txt --batch-size 4 --epochs 2 --output-model TRAIN_sonuc.h5 --train-dataset train --validate-dataset validation
+  python3 Train.py --width 128 --height 64 --length 6 --symbols symbols.txt --batch-size 4 --epochs 2 --output-model TRAIN_sonuc.h5 --train-dataset train --validate-dataset validation
 
 Train the neural network for 8 epochs on the data specified.The suggested training dataset size for the initial training for captcha length of 6 symbols
 is 1500000 images, with a validation dataset size of 30000 images.
@@ -30,7 +32,7 @@ You should be in the virtual environment and should to install these library bef
 -	pip3 install numpy
 and then run the classsifier
 
-python3 classify.py --model-name TRAIN_sonuc --captcha-dir  ERBILENH-project2rpi --output last_output.txt --symbols piazza_2.txt
+   python3 classify.py --model-name TRAIN_sonuc --captcha-dir  ERBILENH-project2rpi --output last_output.txt --symbols piazza_2.txt
 
 # Alternative 
 You can the script bash run.sh as an alternative :)
