@@ -12,7 +12,7 @@ outputModified=" M $outputFile"
 newOutputFileAdded="?? $outputFile"
 modelModified=" M $outputFile"
 
-cd ./code
+
 
 # create venv if none exists
 if [  ! -d "./temp/bin" ]; then
