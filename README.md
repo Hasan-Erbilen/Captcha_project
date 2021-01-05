@@ -31,7 +31,8 @@ and then run the classsifier
 
 python3 classify.py --model-name TRAIN_sonuc --captcha-dir  ERBILENH-project2rpi --output last_output.txt --symbols piazza_2.txt
 
-# or you can the script (bash run.sh) as an alternative
+# Alternative 
+you can the script bash run.sh as an alternative :)
 
 
 
