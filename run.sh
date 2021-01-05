@@ -4,9 +4,10 @@ now=$(date)
 echo "$now"
 echo "Current date: $now"
 
-modelFile="TRAIN_sonuc"
+modelFile="TRAIN_sonuc.tflite"
 captchaDir="ERBILENH-project2rpi "
-outputFile="OUTPUT.txt"
+outputFile="$captchaDir""_output.txt"
+
 
 outputModified=" M $outputFile"
 newOutputFileAdded="?? $outputFile"
