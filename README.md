@@ -30,7 +30,8 @@ You should be in the virtual environment and should to install these library bef
 and then run the classsifier
 
 python3 classify.py --model-name TRAIN_sonuc --captcha-dir  ERBILENH-project2rpi --output last_output.txt --symbols piazza_2.txt
-or you can the script (bash run.sh) as an alternative
+
+#or you can the script (bash run.sh) as an alternative
 
 
 
