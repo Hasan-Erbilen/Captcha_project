@@ -24,8 +24,7 @@ is 1500000 images, with a validation dataset size of 30000 images.
 
 # Running the classifier
 You should be in the virtual environment and should to install these library before run this command.
--		pip3 install tflite_runtime (tflite_runtime-2.5.0-cp38-cp38-linux_armv7l)
--   pip3 install wheel
+-		pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp38-cp38-linux_armv7l.whl
 -		pip3 install opencv-python
 -		pip3 install numpy
 and then run the classsifier
